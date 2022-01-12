@@ -1,7 +1,7 @@
 class Solution {
     private int[][] dp;
     private int[][] cost;
-
+    //dynamic programming
     private int mcost(int hnum, int currc){
         if(hnum>cost.length-1)return 0;
         if(dp[hnum][currc]!=0)return dp[hnum][currc];
