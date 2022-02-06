@@ -30,34 +30,16 @@ public class MinCostPath {
 
                     switch(k){
                         case 0:
-                            if(C.get(i).charAt(j)=='R'){
-                                temp = dp[i][j];
-
-                            }else{
-
-                                temp = 1+ dp[i][j];
-                            }
+                            temp = C.get(i).charAt(j)=='R'?dp[i][j]:1+dp[i][j];
                             break;
                         case 1:
-                            if(C.get(i).charAt(j)=='L'){
-                                temp = dp[i][j];
-                            }else{
-                                temp = 1+ dp[i][j];
-                            }
+                            temp = C.get(i).charAt(j)=='L'?dp[i][j]:1+dp[i][j];
                             break;
                         case 2:
-                            if(C.get(i).charAt(j)=='U'){
-                                temp = dp[i][j];
-                            }else{
-                                temp = 1+ dp[i][j];
-                            }
+                            temp = C.get(i).charAt(j)=='U'?dp[i][j]:1+dp[i][j];
                             break;
                         case 3:
-                            if(C.get(i).charAt(j)=='D'){
-                                temp = dp[i][j];
-                            }else{
-                                temp = 1+ dp[i][j];
-                            }
+                            temp = C.get(i).charAt(j)=='D'?dp[i][j]:1+dp[i][j];
                     }
 
                     if(!visited[i_new][j_new]||visited[i_new][j_new]&&temp<dp[i_new][j_new]){
