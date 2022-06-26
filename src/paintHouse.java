@@ -1,4 +1,4 @@
-class Solution {
+class paintHouse {
     private int[][] dp;
     private int[][] cost;
     //dynamic programming
